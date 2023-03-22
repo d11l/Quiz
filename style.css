@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background:  #476c96;
+    display: grid;
+    place-content: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.main-container {
+    width: 400px;
+    background: #FFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ques-con {
+    padding: 2rem 1.5rem;
+    background: #FFE489;
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+}
+
+.noOfQuestion {
+    position: absolute;
+    background: #FFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #476c96;
+    padding: 5px 8px;
+    border-radius: 5px;
+    left: 50%;
+    top: -18px;
+    transform: translateX(-50%);
+}
+
+.question-mark {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    color: #476c96;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #FFFF;
+    display: grid;
+    place-content: center;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timer {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #476c96;
+}
+
+.option {
+    margin-top: 2rem;
+}
+
+.option>p {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border: 2px solid #476c96;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #476c96;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.option>P:hover {
+    background: #f0efec;
+}
+
+.select {
+    background: #476c96;
+    color: #FFFF !important;
+}
+
+.select:hover {
+    background: #476c96 !important;
+}
+
+.scoreElm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    color: #476c96;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.restart {
+    padding: 10px 30px;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background: #476c96;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
